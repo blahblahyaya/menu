@@ -1,0 +1,85 @@
+.topNav.borderTB{
+  border-top: 1px solid #base;
+  border-bottom: 1px solid #base;
+}
+
+.topNav > ul {
+  background:#base;
+}
+
+.topNav li {
+
+  background: #base;
+}
+
+.topNav li a  {
+  color:#linkBase;
+}
+
+.topNav li.active a {
+  color:#linkHover;
+}
+
+.topNav li.active {
+  background: #liHover;
+}
+
+.topNav li li {
+  float:none;
+  background: #transitionEnd;
+}
+
+.topNav > ul li:hover {
+  background: #liHover;
+}
+
+.topNav > ul > li:hover > a {
+  color: #FFF;
+}
+
+.topNav li:hover li {
+  background: #EAEAEA;
+}
+
+.topNav li:hover li:hover {
+  background: #FFF;
+}
+
+.topNav li:hover li:hover > a {
+  color: #linkSecondaryBase;
+}
+
+.topNav li:hover a {
+  color:#linkSecondaryHover;
+}
+
+
+@-webkit-keyframes fadeIt {
+  0%   { background-color: #transitionStart; }
+  100% { background-color: #transitionEnd; }
+} 
+@-moz-keyframes fadeIt {
+   0%   { background-color: #transitionStart; }
+  100% { background-color: #transitionEnd; }
+}
+@-o-keyframes fadeIt {
+   0%   { background-color: #transitionStart; }
+  100% { background-color: #transitionEnd; }
+}
+@keyframes fadeIt {
+   0%   { background-color: #transitionStart; }
+  100% { background-color: #transitionEnd; }
+}
+
+li:hover li:hover,
+li:focus li:focus {    
+    background-image:none;
+    -webkit-animation: fadeIt 500ms step-end; 
+       -moz-animation: fadeIt 500ms step-end; 
+         -o-animation: fadeIt 500ms step-end; 
+            animation: fadeIt 500ms step-end; 
+}
+
+.topNav .mobile-menu {
+  background-color:#base !important;
+}

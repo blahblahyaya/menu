@@ -1,0 +1,24 @@
+{
+  "name": "AvalaraDev/MtgPluginL2Nav",
+  "type": "wordpress-plugin",
+  "license": "",
+  "description": "",
+  "homepage": "https://github.com/AvalaraDev/MtgPluginL2Nav",
+  "authors": [
+    {
+      "name": "Andy Roberts",
+      "email": "andy.roberts@avalara.com",
+      "homepage": "https://github.com/blahblahyaya"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "support": {
+    "issues": "https://github.com/AvalaraDev/MtgPluginL2Nav/issues"
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "composer/installers": "~1.0"
+  }
+}

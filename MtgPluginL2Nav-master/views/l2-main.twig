@@ -1,0 +1,581 @@
+<style type="text/css">
+    /*
+        NAVIGATION CSS TO USE
+    */
+
+    .navbar.l1 {
+        -webkit-border-radius:0;
+        -moz-border-radius:0;
+        -ms-border-radius:0;
+        border-radius:0;
+    }
+
+    .language-item {
+        font-family: fontawesome;
+        color: #5F6062;
+        content: "\f0ac";
+        padding-right: 8px;
+    }
+
+    themeColor {
+        display: none;
+    }
+
+    .theme-background {
+        background: #F60;
+    }
+
+    #autoMobileStyles,
+    #navigationLogo {
+        display:none !important;
+    }
+
+    .topNav {
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .topNav .logo {
+        display: table;
+        height: 100%;
+    }
+
+    .topNav .logo img {
+        max-width:100%;
+        height: auto;
+        display: block;
+        position: relative;
+        margin-top:50%;
+        transform: translateY(-50%);
+    }
+
+    .topNav .logo > a {
+        padding: 0 20px;
+    }
+
+    .topNav ul:before,
+    .topNav ul:after {
+        display: table;
+        width: 100%;
+        visibility: none;
+        position: relative;
+        content: "";
+    }
+
+    .topNav ul {
+        width:100%;
+        max-width:100%;
+        display: table;
+        height:auto;
+        padding: 0;
+        white-space: nowrap;
+    }
+
+    .topNav {
+        display: table;
+        background: #F60;
+    }
+
+    .topNav.borderTB{
+        border-top: 1px solid #F60;
+        border-bottom: 1px solid #F60;
+    }
+
+    .topNav > ul {
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        display: table;
+        background:#F60;
+    }
+
+    .topNav > ul > li {
+        display: inline-block;
+        height: 100%;
+    }
+
+    .topNav > ul > li.btn {
+        background-color: #559bd2;
+        border: 2px solid #ffffff;
+        height: 41px;
+        font-size: 15px;
+        margin-top: 6px;
+        margin-right: 20px;
+        border-radius: 4px;
+        line-height: 0.6em;
+    
+    }
+    .topNav li.btn a {
+        padding: 15px 15px 15px 15px; 
+    }
+
+    .topNav li {
+        list-style: none;
+        float:left;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        white-space: nowrap;
+        display: block;
+        background: #F60;
+    }
+
+    .topNav li.contact-us {
+        float:right;
+    }
+
+    .topNav li.contact-us:hover {
+        background:initial;
+    }
+
+    .topNav li a::before {
+        color:#FFF;
+    }
+
+    .topNav li a {
+        text-align:left;
+    }
+    .topNav li a.contact-us span {
+        width: auto;
+    }
+
+    .topNav li a.contact-us {
+        background-color: #059bd2;
+        border: 2px solid #FFF;
+        height: 41px;
+        margin-top: 6px;
+        margin-right: 20px;
+        border-radius: 4px;
+        line-height: 0.6em;
+    }
+
+    .topNav li a.contact-us:hover {
+        background-color: #0587be;
+        border: 2px solid #0587be;
+        color: #fff;
+    }
+
+    .topNav li a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color:#FFF;
+        white-space: nowrap;
+    }
+
+    .topNav > ul > li > a:before {
+        color: #FFF;
+    }
+
+    .topNav li a i.fa {
+      font-size: .8em;
+      vertical-align: middle;
+      line-height: 0 !important;
+      padding: 0 !important;
+      margin-top: -1px;
+    }
+
+    .topNav li a:hover i.fa {
+      margin-top: -1px;
+    }
+
+    .topNav li.active {
+        background: #E65000;
+    }
+
+    .topNav li li {
+        float:none;
+        background: #FFF;
+    }
+
+    .topNav > ul li:hover {
+        background: #E65000;
+    }
+
+    .topNav li.logo:hover {
+        background:initial;
+
+    }
+
+    .topNav > ul > li:hover > a {
+        color: #FFF;
+    }
+
+    .topNav li:hover li {
+        background: #EAEAEA;
+    }
+
+    .topNav li:hover li:hover {
+        background: #FFF;
+    }
+
+    .topNav li:hover li > a {
+        color: #5F6062;
+    }
+
+
+    .topNav li:hover li:hover > a {
+        color: #E65000;
+    }
+
+    .topNav li:hover li a i {
+        margin-right:15px !important;
+    }
+
+    .topNav li a i.go-to {
+        display:none;
+    }
+
+    .topNav li a i.fa.second:not(.go-to) {
+        display: none;
+    }
+
+    .topNav li:hover > a i.fa.first:not(.go-to) {
+        display: none;
+    }
+
+    .topNav li:hover > a i.fa.second:not(.go-to){
+        display: inline-block;
+    }
+
+    .topNav li:hover a {
+        color:#5F6062;
+    }
+
+    .topNav li li:hover {
+        background: #FFF;
+    }
+
+    .topNav li ul {
+        display: none;
+        position: absolute;
+        top:100%;
+        width:100%;
+    }
+
+    .topNav ul li ul li ul {
+        top:0;
+        left: 100%;
+        width:100%;
+    }
+
+    .topNav ul li:hover > ul {
+        display: block;
+        z-index:200;
+        width:inherit;
+        -webkit-box-shadow:1px 2px 5px #EFEFEF;
+        -moz-box-shadow:1px 2px 5px #EFEFEF;
+        -ms-box-shadow:1px 2px 5px #EFEFEF;
+        box-shadow:1px 2px 5px #EFEFEF;
+    }
+
+    .topNav ul li ul li:hover > ul {
+        display: block;
+        z-index:200;
+        width:inherit;
+        border: 1px solid
+        left:100%;
+    }
+
+    @-webkit-keyframes fadeIt {
+      0%   { background-color: #EFEFEF; }
+      100% { background-color: #FFF; }
+    }
+    @-moz-keyframes fadeIt {
+       0%   { background: #EFEFEF; }
+      100% { background: #FFF; }
+    }
+    @-o-keyframes fadeIt {
+       0%   { background: #EFEFEF; }
+      100% { background: #FFF; }
+    }
+    @keyframes fadeIt {
+       0%   { background: #EFEFEF; }
+      100% { background: #FFF; }
+    }
+
+    .topNav li:hover li:hover,
+    .topNav li:focus li:focus {    
+        background-image:none;
+        -webkit-animation: fadeIt 500ms step-end; 
+           -moz-animation: fadeIt 500ms step-end; 
+             -o-animation: fadeIt 500ms step-end; 
+                animation: fadeIt 500ms step-end; 
+    }
+
+    li.lang,
+    li.button {
+        float:right;
+    }
+
+    .topNav.stick {
+        position: fixed;
+        width:100%;
+        max-width:100% !important;
+        top:0;
+        left:0;
+        border-top: none;
+        -webkit-box-shadow:1px 3px 10px #CCC;
+        -moz-box-shadow:1px 3px 10px #CCC;
+        -ms-box-shadow:1px 3px 10px #CCC;
+        box-shadow:1px 3px 10px #CCC;   
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+
+    a.mobile-logo {
+        padding:0 !important;
+        position: absolute;
+        left:20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    .dynamic-menu {
+        display:none;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<div id="autoMobileStyles" style="display:none">
+
+    @media screen and (max-width:480px){
+
+        .navbar.l1 {
+            display:none;
+        }
+        .topNav .mobile-menu {
+            position: relative;
+            z-index: 100;
+            display: block;
+            float:right;
+            width: 100%;
+            background: #F60;
+            color: #FFF; 
+        }
+
+        .mobile-menu-icon i.fa {
+            font-size:.7em;
+        }
+
+        a.mobile-menu-icon::after {
+            content: "Menu";
+            display: inline-block;
+            color: #FFF;
+
+        }
+
+        a.mobile-menu-icon.close-mobile-menu::after {
+            content: "Close";
+            display: inline-block;
+
+        }
+
+        .mobile-menu-items {
+            float:right;
+        }
+
+        .topNav .mobile-menu a {
+            padding:15px;
+            display: inline-block;
+            clear:none;
+            float:left;
+            text-decoration: none;
+        }
+
+        .topNav .mobile-menu a, 
+        .mobile-menu a:hover {
+            color: #FFF;
+            display: block;
+        }
+
+        .topNav li a.go-to::before {
+            content: "";
+            display:none;
+            visibility:hidden;
+        }
+
+        .topNav {
+            display: block;
+        }
+
+        .topNav ul, 
+        .topNav li ul {
+            position: relative;
+            border: none;
+        }
+
+        .topNav > ul > li,
+        .topNav li,
+        .topNav li li {
+            display: block;
+            float:none;
+            clear: both;
+            width:100% !important;
+            height: auto;
+            left:0 !important;
+            position:relative;
+        }
+
+        .topNav ul {
+            display: none;
+            width:100%;
+            height: auto;
+            left: 0 !important;
+        }
+
+        .topNav li a {
+            text-align:left;
+        }
+
+        .topNav li.contact-us {
+            float:none;
+            text-align:left
+        }
+
+        .topNav li a.contact-us span {
+            width: auto;
+        }
+
+        .topNav li a.contact-us {
+            background-color: #F60;
+            color: #FFF;
+            border: none;
+            height: auto;
+            margin-top: 0;
+            margin-right: 0;
+            border-radius: 0;
+            line-height: .80em;
+            width: 100%;
+        }
+
+        .topNav li a.contact-us:hover {
+            background-color: #0587be;
+            border: none;
+        }
+
+        .topNav li:hover > a i.fa.first {
+            display: initial;
+        }
+
+        .topNav li:hover > a i.fa.second {
+            display: none;
+        }
+
+        .topNav li a.go-to {
+            display:block;
+            position:absolute;
+            top:0;
+            right:0;
+            z-index:10;
+        }
+
+        .topNav ul li:hover > ul,
+        .topNav ul li:hover ul li:hover > ul {
+            display: none;
+        }
+
+        .topNav.stick,
+        .topNav ul li:hover > ul,
+        .topNav ul li:hover ul li:hover > ul {
+            -webkit-box-shadow:none;
+            -moz-box-shadow:none;
+            -ms-box-shadow:none;
+            box-shadow:none;
+        }
+
+        .topNav .is-mobile-active {
+            background: #FFF;
+            border-bottom:1px solid #F60;
+        }
+
+        .topNav .is-mobile-active a {
+            color: #F60;
+        }
+
+        .topNav .mobile-active ul:first-child,
+        .topNav .mobile-active ul:first-child li {
+            display: block !important;
+        }
+
+        .topNav .mobile-active > ul li {
+            background: #EFEFEF;
+        }
+
+        .topNav .mobile-active > ul > li a {
+            color: #5f6062;
+        }
+
+        .topNav li.logo {
+            display:none !important;
+        }
+
+        .topNav .lang {
+            display:none !important
+        }
+
+        .dynamic-menu {
+            display:block;
+        }
+
+        .topNav > ul > li.btn {
+           /* background-color: #f60; 
+            border: none; */
+            width: initial !important;
+            margin-bottom: 5px;
+        }
+         .topNav li.btn a {
+            padding: 5px 5px 5px 5px; 
+        }
+    }
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<nav>
+    <div class="topNav set-sticky"
+        data-logo="/wp-content/uploads/2016/12/Avalara-Logo-White.png"
+        data-auto-addition="bottom"
+        data-mobile-toggle="769"
+        data-max-width="1170">
+        <div class="mobile-menu">
+            <div class="mobile-menu-items">
+                <a href="#" class="mobile-menu-icon" onclick="showMobileMenu(this); return false;">
+                    <i class="fa fa-bars"></i>
+                </a> 
+            </div>
+        </div>
+        <div id="navigationLogo">
+            <!-- Avalara logo here -->
+            {{function("avada_logo")}}
+        </div>
+    		<!-- Collect the nav links, forms, and other content for toggling -->
+    		<!-- wp_nav_menu -->
+            {% filter shortcodes %}
+            [l2_wp_nav]
+            {% endfilter %}
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div class="clearfix"></div>

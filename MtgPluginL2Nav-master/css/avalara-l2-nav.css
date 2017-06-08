@@ -1,0 +1,95 @@
+.navbar.navbar-default.l2 {
+	background-color: #f60;
+	border-radius: 0;
+}
+/*avalara logo*/
+.navbar-header.l2 > div img {
+	top: 8px;
+	max-height: 20px;
+}
+.navbar.navbar-default.l2 .navbar-nav.navbar-right {
+	border-radius: 0;
+	margin-right: 10px;
+	background-color: #f60;
+}
+.navbar.navbar-default.l2 {
+ 	min-height: 0;
+  	border-bottom: 0;
+  	margin-bottom: 0;
+}
+.navbar.navbar-default.l2 .dropdown-menu {
+	left: 0;
+	background-color: #eaeaea;
+	margin-top: -1px;
+	border-top: 0;
+}
+.navbar.navbar-default.l2 ul li a {
+	font-size: 15px;
+	color: #5F6062;
+	padding: 10px 20px;
+}
+.navbar.navbar-default.l2 ul li.dropdown > .dropdown-toggle .caret {
+	border-top-color: #5F6062;
+	border-bottom-color: #5F6062;
+}
+.navbar.navbar-default.l2 .dropdown.open .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+	margin-left: 2px;
+    vertical-align: middle;
+    border-bottom: 4px dashed;
+    border-top: 0px solid transparent;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.navbar.navbar-default.l2 ul li.dropdown ul a {
+	color:#5F6062;
+}
+.navbar.navbar-default.l2 .dropdown-menu li a:hover {
+	background-color: #f5f5f5;
+	color: #f60;
+}
+.navbar.navbar-default.l2 .dropdown-menu > .active > a,
+.navbar.navbar-default.l2 .dropdown-menu > .navbar-nav .active > a:hover,
+.navbar.navbar-default.l2 .dropdown-menu > .active > a:focus {
+	background-color: #ffffff;
+	color: #f60;
+}
+.navbar.navbar-default.l2 .dropdown.open > a {
+	color: #5F6062;
+	background-color: #ffffff;
+}
+.navbar.navbar-default.l2 .l2-phone > a:before {
+ 	font-family: fontawesome;
+	color: #5F6062;
+  	content: "\f095";
+  	padding-right: 8px
+}
+.navbar.navbar-default.l2 .l2-user > a:before {
+ 	font-family: fontawesome;
+	color: #5F6062;
+	content: "\f007";
+	padding-right: 8px
+}
+/*make sure next li doesn't cover caret*/
+.navbar.navbar-default.l2 .l2-user > a {
+	position: relative;
+	z-index: 2;
+}
+.navbar.navbar-default.l2 .l2-globe > a:before {
+ 	font-family: fontawesome;
+	color: #5F6062;
+  	content: "\f0ac";
+  	padding-right: 8px
+}
+/*right-align countries*/
+.navbar.navbar-default.l2 li.l2-globe > a {
+	text-align: right;
+}
+/*hide L2 on mobile*/
+@media (max-width: 768px) {
+	.navbar.navbar-default.l2 {
+	   display: none;
+   }
+}
